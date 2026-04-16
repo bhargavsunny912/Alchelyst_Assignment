@@ -3,7 +3,7 @@ import data from "../Data/mockData.json";
 import Topbar from "../Components/Layouts/TopBar";
 import FilterBar from "../Components/Layouts/FilterBar";
 import NavWorkflows from "../Components/WorkFlows/NavWorkflows";
-import OtherWorkflows from "../Components/WorkFlows/OtherWorkflows";
+import OtherWorkflows from "../Components/WorkFlows/otherWorkflows";
 import Events from "../Components/Capital_Events/Events";
 import Reports from "../Components/Reports/Reports";
 import Payments from "../Components/Payments/Payments";

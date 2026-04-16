@@ -1,7 +1,7 @@
 import data from "../Data/mockData.json";
 import Topbar from "../Components/Layouts/TopBar";
 import NavWorkflows from "../Components/WorkFlows/NavWorkflows";
-import OtherWorkflows from "../Components/WorkFlows/OtherWorkflows";
+import OtherWorkflows from "../Components/WorkFlows/otherWorkflows";
 import Modal from "../Components/Resuable/Modal";
 import useModal from "../Hooks/useModal";
 
