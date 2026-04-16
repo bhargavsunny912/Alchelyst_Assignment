@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "user": { "name": "bhargav penta", "initials": "BP", "role": "Portfolio Analyst" },
+    "date": "14 Apr 2025 - 14 Apr 2026",
+    "totalWorkflows": 32
+  },
+
+  "navTabs": [
+    { "id": "dashboard", "label": "Dashboard", "route": "/" },
+    { "id": "workflows", "label": "Workflows", "route": "/Workflows" },
+    { "id": "events", "label": "Events", "route": "/Events" },
+    { "id": "reports", "label": "Reports", "route": "/Reports" },
+    { "id": "payments", "label": "Payments", "route": "/Payments" }
+  ],
+
+  "filterChips": [
+    { "id": "all", "label": "All items", "active": true },
+    { "id": "workflows", "label": "Workflows" },
+    { "id": "capital", "label": "Capital Events" },
+    { "id": "reports", "label": "Reports" },
+    { "id": "payments", "label": "Payments" }
+  ],
+
+  "navWorkflows": {
+    "title": "NAV Workflows",
+    "icon": "chart",
+    "iconColor": "blue",
+    "count": 32,
+    "totalRows": 32,
+    "columns": ["Fund", "Workflow", "Value date", "Progress", "Step status"],
+    "rows": [
+      {
+        "id": "nw101",
+        "fund": { "name": "Zenith Alpha Fund", "sub": "Global Multi Strategy" },
+        "workflow": "Monthly NAV Cycle",
+        "valueDate": "30 Jun 2025",
+        "progress": 68,
+        "progressColor": "green",
+        "steps": [
+          { "label": "Trade capture", "status": "done" },
+          { "label": "Security setup", "status": "done" },
+          { "label": "FX & Pricing", "status": "done" },
+          { "label": "Investor approval", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Zenith Alpha Fund – Monthly NAV Cycle",
+          "subtitle": "Zenith Asset Managers · Value date: 30 Jun 2025",
+          "kpis": [
+            { "label": "Subscriptions", "value": "$28.4M", "sub": "Net: $27.9M" },
+            { "label": "Redemptions", "value": "$6.2M", "sub": "Net: $6.1M" },
+            { "label": "Progress", "value": "68%", "sub": "7 of 11 steps" },
+            { "label": "Pending", "value": "3", "sub": "Approval pending", "warn": true }
+          ],
+          "workflowSteps": [
+            { "name": "Pre checks", "status": "done" },
+            { "name": "Processing", "status": "done" },
+            { "name": "Receivables", "status": "done" },
+            { "name": "Capital", "status": "done" },
+            { "name": "Reports", "status": "done" },
+            { "name": "Post NAV", "status": "done" },
+            { "name": "Approval NAV", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw102",
+        "fund": { "name": "Orion Debt Fund", "sub": "Corporate Bond Strategy" },
+        "workflow": "Monthly NAV Cycle",
+        "valueDate": "30 Jun 2025",
+        "progress": 41,
+        "progressColor": "amber",
+        "steps": [
+          { "label": "Trade capture", "status": "done" },
+          { "label": "Pricing", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Orion Debt Fund – NAV Cycle",
+          "subtitle": "Bond Strategy · Value date: 30 Jun 2025",
+          "kpis": [
+            { "label": "Subscriptions", "value": "$12.2M" },
+            { "label": "Redemptions", "value": "$2.1M" },
+            { "label": "Progress", "value": "41%" }
+          ],
+          "workflowSteps": [
+            { "name": "Trade capture", "status": "done" },
+            { "name": "Pricing", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw103",
+        "fund": { "name": "Nova Growth Equity", "sub": "Emerging Markets" },
+        "workflow": "Weekly DA Process",
+        "valueDate": "14 Apr 2026",
+        "progress": 100,
+        "progressColor": "green",
+        "steps": [
+          { "label": "Trade capture", "status": "done" },
+          { "label": "Pricing", "status": "done" }
+        ],
+        "modal": {
+          "title": "Nova Growth Equity – Weekly Process",
+          "subtitle": "Emerging Markets",
+          "kpis": [
+            { "label": "Progress", "value": "100%" }
+          ],
+          "workflowSteps": [
+            { "name": "Completed", "status": "done" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw104",
+        "fund": { "name": "Atlas Infrastructure Fund", "sub": "Real Assets" },
+        "workflow": "Quarterly NAV Cycle",
+        "valueDate": "31 Mar 2026",
+        "progress": 55,
+        "progressColor": "blue",
+        "steps": [
+          { "label": "Valuation", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Atlas Infrastructure – Quarterly NAV",
+          "subtitle": "Real Assets",
+          "kpis": [
+            { "label": "Progress", "value": "55%" }
+          ],
+          "workflowSteps": [
+            { "name": "Valuation", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw105",
+        "fund": { "name": "Vertex Credit Fund", "sub": "Private Lending" },
+        "workflow": "Daily NAV Workflow",
+        "valueDate": "26 Sep 2025",
+        "progress": 64,
+        "progressColor": "amber",
+        "steps": [
+          { "label": "Income", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Vertex Credit – Daily NAV",
+          "subtitle": "Private Lending",
+          "kpis": [
+            { "label": "Progress", "value": "64%" }
+          ],
+          "workflowSteps": [
+            { "name": "Income", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw106",
+        "fund": { "name": "Helios Energy Fund", "sub": "Renewable Assets" },
+        "workflow": "Quarterly NAV Cycle",
+        "valueDate": "31 Mar 2026",
+        "progress": 78,
+        "progressColor": "green",
+        "steps": [
+          { "label": "Audit", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Helios Energy – NAV",
+          "subtitle": "Renewable Assets",
+          "kpis": [
+            { "label": "Progress", "value": "78%" }
+          ],
+          "workflowSteps": [
+            { "name": "Audit", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw107",
+        "fund": { "name": "Pioneer Equity Fund", "sub": "Mid Cap Strategy" },
+        "workflow": "Weekly NAV",
+        "valueDate": "10 Apr 2026",
+        "progress": 52,
+        "progressColor": "blue",
+        "steps": [
+          { "label": "Pricing", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Pioneer Equity – Weekly NAV",
+          "subtitle": "Mid Cap",
+          "kpis": [
+            { "label": "Progress", "value": "52%" }
+          ],
+          "workflowSteps": [
+            { "name": "Pricing", "status": "warn" }
+          ],
+          "investors": []
+        }
+      },
+
+      {
+        "id": "nw108",
+        "fund": { "name": "Summit Global Fund", "sub": "Diversified Portfolio" },
+        "workflow": "Monthly NAV Cycle",
+        "valueDate": "31 May 2025",
+        "progress": 83,
+        "progressColor": "green",
+        "steps": [
+          { "label": "Approval", "status": "warn" }
+        ],
+        "modal": {
+          "title": "Summit Global – NAV",
+          "subtitle": "Diversified Portfolio",
+          "kpis": [
+            { "label": "Progress", "value": "83%" }
+          ],
+          "workflowSteps": [
+            { "name": "Approval", "status": "warn" }
+          ],
+          "investors": []
+        }
+      }
+    ]
+  },
+
+  "otherWorkflows": {
+    "title": "Other Workflows",
+    "icon": "clock",
+    "iconColor": "gray",
+    "count": 3,
+    "columns": ["Fund", "Name", "Value date", "Status"],
+    "rows": [
+      {
+        "id": "ow11",
+        "fund": { "name": "Quantum Tech Fund", "sub": "Innovation Portfolio" },
+        "name": "Controller Pack",
+        "valueDate": "30 May 2025",
+        "tags": [
+          { "label": "Initial Check", "type": "pending" },
+          { "label": "Reports Ready ✓", "type": "delivered" }
+        ]
+      },
+      {
+        "id": "ow12",
+        "fund": { "name": "Quantum Tech Fund", "sub": "Innovation Portfolio" },
+        "name": "Controller Pack",
+        "valueDate": "12 Mar 2025",
+        "tags": [
+          { "label": "Initial Check", "type": "pending" },
+          { "label": "Reports Ready ✓", "type": "delivered" }
+        ]
+      },
+      {
+        "id": "ow13",
+        "fund": { "name": "Nova Systems Fund", "sub": "Tech Strategy" },
+        "name": "Audit Pack",
+        "valueDate": "01 Apr 2025",
+        "tags": [
+          { "label": "Pending Review", "type": "pending" }
+        ]
+      }
+    ]
+  },
+
+  "capitalEvents": {
+    "title": "Capital Events",
+    "icon": "dollar",
+    "iconColor": "amber",
+    "count": 12,
+    "totalRows": 12,
+    "columns": ["ID", "Fund", "Type", "Value date", "Status"],
+    "rows": [
+      { "id": "6001", "fund": "Zenith Alpha Fund", "type": "Capital Call", "valueDate": "30 Mar 2026", "status": "initiated" },
+      { "id": "6002", "fund": "Zenith Alpha Fund", "type": "Distribution", "valueDate": "30 Mar 2026", "status": "initiated" },
+      { "id": "6003", "fund": "Atlas Infrastructure Fund", "type": "Call", "valueDate": "13 Mar 2026", "status": "initiated" },
+      { "id": "6004", "fund": "Vertex Credit Fund", "type": "Call", "valueDate": "14 Feb 2026", "status": "review" },
+      { "id": "6005", "fund": "Helios Energy Fund", "type": "Distribution", "valueDate": "10 Feb 2026", "status": "initiated" }
+    ]
+  },
+
+  "reports": {
+    "title": "Reports",
+    "icon": "file",
+    "iconColor": "green",
+    "count": 3,
+    "columns": ["Entity", "Report", "Group", "Created", "Status"],
+    "rows": [
+      { "id": "r11", "entity": "Atlas Energy", "report": "Reconciliation Report", "group": "Finance", "created": "30 May 2025", "status": "delivered" },
+      { "id": "r12", "entity": "Beta Feeder", "report": "Carry Report", "group": "Finance", "created": "—", "status": "pending" },
+      { "id": "r13", "entity": "Nova Holdings", "report": "Audit Summary", "group": "Finance", "created": "15 Apr 2025", "status": "delivered" }
+    ]
+  },
+
+  "payments": {
+    "title": "Payments",
+    "icon": "card",
+    "iconColor": "purple",
+    "count": 3,
+    "columns": ["ID", "Type", "Value date", "Amount", "Description", "Status"],
+    "rows": [
+      { "id": "801", "type": "Investment Payment", "valueDate": "20 Jun 2025", "amount": "65,000.00", "description": "Initial capital", "status": "client" },
+      { "id": "802", "type": "Redemption Payment", "valueDate": "19 Jun 2025", "amount": "12,500.00", "description": "Partial exit", "status": "client" },
+      { "id": "803", "type": "Fee Payment", "valueDate": "18 Jun 2025", "amount": "4,200.00", "description": "Management fees", "status": "client" }
+    ]
+  }
+}
